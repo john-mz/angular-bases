@@ -1,0 +1,23 @@
+<h1>{{nombre}}</h1>
+<!-- definition list = dl -->
+<dl>
+  <td>Nombre:</td>
+  <!-- dd = description -->
+  <dd>{{nombre}}</dd>
+
+  <td>Edad:</td>
+  <dd> {{edad}} </dd>
+
+  <td>Metodo:</td>
+  <dd>{{edadNombre()}}</dd>
+
+  <td>Capitalizado:</td>
+  <!-- capitalizedName es un getter -->
+  <dd>{{capitalizedName}}</dd>
+
+</dl>
+<!-- si escribo 'a-if' el autocompletado me define que necesito *ngiF="" -->
+<button *ngIf=" nombre != 'Spiderman' " class="btn btn-primary mx-2" (click)="cambiarNombre()">Cambiar nombre</button>
+<button *ngIf=" edad == 18 " class="btn btn-primary" (click)="cambiarEdad()">Cambiar edad</button>
+<button class="btn btn-primary mx-2" (click)="resetForm()">Resetear</button>
+
