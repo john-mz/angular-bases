@@ -14,7 +14,6 @@ export class ListComponent {
   deleteLastHero(): void {
     // if (this.heroNames.length != 0) {
     this.heroeBorrado = this.heroNames.pop();
-      // console.log(this.heroNames);
     // }
   }
 }
